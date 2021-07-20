@@ -1,0 +1,48 @@
+    Options +FollowSymlinks
+    Options -Indexes 
+    RewriteEngine On 
+    RewriteCond %{REQUEST_METHOD} ^(TRACE|OPTIONS) 
+    RewriteRule .* - [F]
+
+
+   <ifModule mod_headers.c>  
+    Header unset Access-Control-Allow-Origin  
+    Header unset Access-Control-Allow-Headers 
+    Header unset Access-Control-Allow-Methods 
+    Header unset Access-Control-Allow-Credentials 
+    Header add Access-Control-Allow-Origin "*"  
+    Header add Access-Control-Allow-Headers "origin, content-type"  
+    Header add Access-Control-Allow-Methods " GET, POST"    
+    Header set Access-Control-Allow-Credentials   "true"      
+    Header set X-Frame-Options SAMEORIGIN      
+    Header set X-Content-Type-Options nosniff   
+    Header set X-XSS-Protection "1; mode=block" 
+  </IfModule>
+   
+  
+
+# Application URL, Created By Sudam Chandra Panda on 13th Aug 2015# 
+
+ 
+		RewriteRule    ^home?$						                index.php
+		RewriteRule    ^Application/?$					                Application/index.php		
+		RewriteRule    ^([a-zA-Z0-9-]*)?$				                index.php?PG=$1
+		RewriteRule    ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-_$]*)?$			    index.php?PG=$1&ID=$2
+     # RewriteRule    ^([a-zA-Z0-9-]*)/([a-zA-Z0-9]+)?$		            index.php?PG=$1&NID=$2
+		RewriteRule    ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)?$		                index.php?PG=$1&ID=$2&NID=$3
+        RewriteRule    ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]*)?$		index.php?PG=$1&ID=$2&NID=$3&RID=$4
+    # RewriteRule    ^([a-zA-Z0-9-]*)/([0-9]+)/([0-9]+)/([0-9]+)?$	                index.php?PG=$1&ID=$2&NID=$3&ID=$4
+                RewriteRule    ^([a-zA-Z0-9-]*)/([0-9]+)/([0-9]+)/([0-9]+)/([a-zA-Z0-9-]*)?$	index.php?PG=$1&ID=$2&NID=$3&RID=$4&SID=$5
+                
+                RewriteRule    ^error/?$                                        view/error.php
+		ErrorDocument 400 http://rajbhavanodisha.gov.in/error
+                ErrorDocument 403 http://rajbhavanodisha.gov.in/error
+                ErrorDocument 404 http://rajbhavanodisha.gov.in/error             
+		ErrorDocument 500 http://rajbhavanodisha.gov.in/error             
+		
+                
+                        php_value session.cookie_httponly 1
+                        php_value max_execution_time 120
+		php_value upload_max_filesize 30M
+		php_value post_max_size 30M
+		php_value date.timezone Asia/Kolkata

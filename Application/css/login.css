@@ -1,0 +1,68 @@
+.login_page {background: url('../../images/slide3.jpg'), #0f2f55 center center no-repeat;
+    background-blend-mode:multiply; position: relative;padding: 12em 0;width: 100%;text-align: center;}
+.login_page h2{margin-top: -35px;color:#fff;font-size:30px;}
+.login_page h2 span{font-size:18px;}
+.login-top {text-align: center;margin: 12em auto;background: #fff;border: 1px solid rgba(213, 213, 214, 0.85);width: 25%;padding: 2em 2em;position: absolute;left: 37.5%;top: 26%;}
+.login-top h3 {font-size: 2.5em;font-weight: 600;text-align: center;margin-bottom: 0.6em;color: #0f2f55;margin-top: 5px;}
+.login input[type="text"], .login input[type="password"], .login input[type="email"]{width: 100%;padding: 0.9em 1em 0.9em 3em;color: #777;font-size: 15px;outline: none;font-weight: 400;border: 1px solid #ddd;background: url("../img/user-icon.png") no-repeat 15px 17px;margin: 0.3em 0;font-family: 'Roboto', sans-serif;}
+.login input[type="password"] {background: url("../img/key.png") no-repeat 15px 17px;}
+.login input[type="email"]{background: url("../img/mail.png") no-repeat 15px 17px;}
+.login input[type="submit"] ,.forgotpassinput[type="submit"]  {font-size: 20px;font-weight: 400;color: #fff;cursor: pointer;outline: none;padding: 10px 15px;width: 100%;    border: 2px solid #0f2f55; background: #0f2f55;margin: 0;font-family: 'Roboto', sans-serif;transition: 0.5s all;-webkit-transition: 0.5s all;-moz-transition: 0.5s all;-o-transition: 0.5s all;-ms-transition: 0.5s all;}
+.login input[type="submit"]:hover,.forgotpassinput[type="submit"]:hover {color: #0f2f55;
+    background: #fff;}
+.new {margin: 1em 0 0em 0;}
+.login .captcha-text{padding: 0.9em 1em 0.9em 0.7em!important;background:none!important}
+.new p a {color: #777;font-weight: 500;font-size: 1.1em;}
+.new p a:hover{text-decoration: none;color: #F67248;}
+.submit {margin: 1em 0;}
+.footer {text-align: center;margin: 18em 0 0em 0;padding:0px 20px;}
+.footer p {color: #333;font-size: 0.85em;margin-top: 1em;}
+.padding-left0{padding-left:0px;}
+.padding-right0{padding-right:0px;}
+.captcha-img{border: solid 1px #dfdfdf; margin-left: 0px; margin-top: 4px;height:50px;width: 100%;}
+.img-button{height: 50px;cursor: pointer;margin-top: 4px; border: 1px solid #ddd;padding: 10px 3px 10px 4px;border-left: none;}
+@media (max-width: 1370px){
+.login_page {padding: 7em 0;}	
+.login-top {width: 30%;left: 35%;margin: 9em auto;}
+.login_page h2 { margin-top: -50px;font-size:26px}
+.footer {margin: 23em 0 0em 0;}
+.img-button {padding: 11px 0px 11px 0px;height: 51px;}
+.captcha-img {height: 51px;}
+}
+
+@media (max-width: 1060px){
+.login_page {padding: 7em 0;}	
+.login-top {width: 40%;left: 30%;margin: 9em auto;}
+
+}
+@media (max-width: 780px){
+.login-top {width: 50%;left: 25%;margin: 9em auto;}
+}
+@media (max-width: 660px){
+.login-top {width: 60%;left: 20%;margin: 9em auto;}
+}
+@media  (min-width:400px) and (max-width: 490px){
+.login_page h2 {margin-top: -25px;font-size: 18px;}
+.login_page h2 span {font-size: 14px;}
+.login_page {padding: 7em 0;}	
+.login-top {width: 80%;left: 10%;margin: 9em auto;}
+}
+@media (max-width: 390px){
+	
+.login-top {width:90%;left:5%;margin: 5em auto;    padding: 1em 1em;}
+.login_page h2 {margin-top: -100px;font-size: 16px;}
+.login_page h2 span {font-size: 11px;}
+.login-top h3 {font-size: 1.8em;}
+.login input[type="text"], .login input[type="password"], .login input[type="email"] {padding: 0.5em 0.5em 0.5em 3em;background: url("../img/user-icon.png") no-repeat 10px 9px;}
+.login input[type="password"] {background: url("../img/key.png")no-repeat 10px 9px;}
+.login input[type="email"]{background: url("../img/mail.png") no-repeat 10px 9px;}
+.submit { margin: 0.5em 0;}
+.login input[type="submit"], .forgotpassinput[type="submit"] {padding:3px 15px;}
+.new p a { font-size: 0.9em;}
+.footer { margin: 15em 0 0em 0;}
+.footer p {color: #333;font-size: 0.8em;margin-top: .5em;}
+.login .captcha-text{padding: 0.5em 0.4em 0.5em .4em!important;background:none!important}
+.captcha-img {height: 39px;}
+.img-button { padding: 9px 0px 9px 0px;height: 39px;}
+
+}

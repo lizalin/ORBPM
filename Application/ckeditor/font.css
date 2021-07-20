@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'AkrutiOriSarala06Normal';
+    src: url('../font/osr06nie.eot');
+    src: url('../font/osr06nie.eot?#iefix') format('embedded-opentype'),
+         url('../font/osr06nie.woff') format('woff'),
+         url('../font/osr06nie.ttf') format('truetype'),
+         url('../font/osr06nie.svg#AkrutiOriSarala06Normal') format('svg');
+	
+}

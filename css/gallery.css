@@ -1,0 +1,56 @@
+
+.spotlight{margin: .5rem .5rem 1rem .5rem;position:relative;float: left;cursor: pointer;display: block;width: 100%;height: 200px;overflow: hidden;}
+.spotlight img{width:100%!important;height: 100%;object-fit: cover;object-position: center;background: #efefef;}
+
+.spotlight:hover .fa-search{visibility: visible;}
+h1.colorBlue{color:#043552;text-align: center;font-size: 2.1rem;font-weight: bold; padding-top: 1.5rem}
+.spotlight img, .image {box-shadow: 2px 3px 4px grey;margin: 0px;}
+.buttonParent{text-align: center;padding-top:1rem; padding-bottom: 2rem}
+.buttonParent button{margin-right: 2rem;font-weight: bold;padding: .5rem 1rem .5rem 1rem;box-shadow: 3px 8px 13px #c7c7c7;}
+.buttonParent button:hover{background-color:#1b4154!important;color:#fff;transition: 1s;}
+.color-icon{color:#9a9a9acc;}
+.colorYellow{background-color:#ffd701!important;}
+.buttonParent button:hover{color: white;}
+.color-sport{color:#e8e0e0b3;}
+.spotlight-group{padding-bottom: 1rem;}
+.buttonParent a{color: #000;}
+.photo{position: relative; transform: scale(1); transition: .5s ease-in-out;}
+.photo:hover{transform: scale(1.5);}
+.text{position: absolute;left: 0;bottom: 0;background: rgba(0,0,0,0.7);color: white;padding: 10px;line-height: 150%;height: 62px;margin-bottom: 0;width: 100%;text-align: center;font-size: 0.8em;}
+. .galleryinner .dropdown{width: 200px; padding:10px;}
+.mega-dropdown-menu { padding: 10px 0px!important; right: auto!important; left: auto!important; background: #fff; margin-top: 0; margin-left: -1rem;  }
+.dropdown-menu {border: none;padding: 0;background: #e3e7f0fc;margin: 0px 17px;border-radius: 0;}
+
+
+/*************PILL CSS BEGINS*****/
+.galleryinner .year.nav-link {margin-bottom: 1rem;border: 1px solid #821aaf;width: 102px;margin-left: 1.3rem;} 
+.galleryinner .inner-gallery .dropdown-menu {min-width: 0px;    width: 115px;}
+
+.galleryinner .purple-bg{background: #821aaf; color: white}
+.galleryinner .inner-gallery .nav-item a:hover { color: #c1c1c1;}
+
+.galleryinner .inner-gallery .nav-item   a {
+ color: #821aaf;}
+ li{list-style-type: none;}
+.galleryinner .inner-gallery .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+ color: #ffffff;
+ background-color: #8825b2;}
+ .galleryinner .page-link{color:#8825b2}
+ #spotlight .footer .title:before{display: none;}
+ #spotlight .footer{text-align: center!important;width: 100%;}
+ #spotlight .footer .title{    background: transparent;width: 100%;}
+ #spotlight .footer .title:after{border-bottom: transparent;}
+ .dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa!important;
+}
+.content-inner ul li:after{position: absolute;
+    font-family: none!important;
+    content: none!important;
+    color: #a2b1d2;
+    font-size: 1em;
+    left: 3px;
+    top: 8px;}
+    .content-inner ul li{padding: 0px!important;}
+/************PILL CSS ENDS HERE*********/

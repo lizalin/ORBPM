@@ -1,0 +1,1728 @@
+body {
+    font-family: Montserrat, sans-serif;
+    background: #f4f6f5
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+a,
+a:hover {
+    text-decoration: none !important
+}
+
+p {
+    color: rgb(135 135 135);
+    font-size: 1em
+}
+
+.logo li {
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle
+}
+
+.topbar {
+    padding: 9px 0;
+    z-index: 25;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 0
+}
+
+.topbar .utilArea {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    vertical-align: middle
+}
+
+.topbar .utilArea ul.langBtns,
+.topbar .utilArea ul.shortcot {
+    margin-top: -2px;
+    margin: 0
+}
+
+.toplower .dropdown-item {
+    padding: .6rem 1.5rem;
+    font-size: .9rem;
+    border-bottom: 1px solid #eee
+}
+
+.toplower .dropdown-menu {
+    border-bottom: 3px solid#2b4987;
+    background-color: #fff
+}
+
+.headerarea {
+    margin-top: 10px
+}
+
+.topbar .headerarea span {
+    display: inline-block
+}
+
+.topbar .headerarea span strong {
+    display: block;
+    font-size: 1.7rem;
+    color: #2b4987
+}
+
+.topbar .headerarea span p {
+    font-size: 1.5rem;
+    text-align: left
+}
+
+.logotext {
+    margin-left: 1.2rem
+}
+
+.headerarea img {
+    float: left;
+    margin-right: 12px
+}
+
+.topbar .utilArea ul {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-right: 10px
+}
+
+.topbar .utilArea ul.shortcot li {
+    position: relative;
+    margin-right: 0
+}
+
+.topbar .utilArea ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -2px
+}
+
+.topbar .utilArea ul li a {
+    color: #686868;
+    transition: .2s;
+    padding: 0 5px
+}
+
+.topbar .utilArea ul.shortcot li:after {
+    position: absolute;
+    top: 5px;
+    right: -2px;
+    height: 15px;
+    width: 1px;
+    background: #a6a0a0;
+    content: ''
+}
+
+.fontAdjust li {
+    border: 1px solid #c9c9c9;
+    background: #b0b0b0;
+    padding: 0;
+    font-size: .75em;
+    height: 22px;
+    width: 32px
+}
+
+.topbar .utilArea .fontAdjust li a {
+    color: #fff
+}
+
+.btn.btn-info.login {
+    border-color: transparent;
+    border-radius: 0;
+    font-size: .9rem;
+    border: 1px solid rgb(43 73 135);
+    color: rgb(43 73 135);
+    background: 0 0
+}
+
+.logo {
+    margin-bottom: 0;
+    line-height: 173%
+}
+
+.logo li strong {
+    color: #2b4987;
+    font-size: 1.7rem
+}
+
+.logo li P {
+    color: #2b4987;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    font-weight: 300
+}
+
+.topbar .utilArea ul.shortcot li:last-child:after {
+    display: none
+}
+
+.pageSearch {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    top: 0
+}
+
+.pageSearch a {
+    top: 0;
+    right: 0;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, .8);
+    transition: .2s;
+    color: rgba(255, 255, 255, .8);
+    height: 30px;
+    width: 30px;
+    text-align: center
+}
+
+.pageSearch a i {
+    line-height: 150%;
+    font-size: 1.4em
+}
+
+.pageSearch .searchBar {
+    position: absolute;
+    top: 37px;
+    right: 0;
+    background: #821aaf;
+    padding: 5px;
+    z-index: 100;
+    display: inline-flex;
+    width: 221px
+}
+
+.myNav .navbar .pageSearch .searchBar input {
+    border: 0;
+    height: 30px;
+    width: 80%;
+    float: left;
+    padding: 0 5px;
+    font-size: .75em
+}
+
+.pageSearch .searchBar .searchBtn {
+    border: 0;
+    height: 30px;
+    background: #a243cb;
+    color: #fff
+}
+
+.dropdown-submenu {
+    position: relative
+}
+
+.dropdown-submenu>.dropdown-menu.menumanag {
+    position: absolute;
+    left: -1px;
+    top: 35px
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    margin-left: 0
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu.menu-scroll {
+    overflow-y: scroll;
+    min-height: 200px;
+    height: 200px
+}
+
+.blinking {
+    animation: blinkingText 1.2s infinite
+}
+
+@keyframes blinkingText {
+    0% {
+        color: rgb(243 241 184)
+    }
+    49% {
+        color: rgb(253 234 1)
+    }
+    60% {
+        color: rgb(253 175 1)
+    }
+    99% {
+        color: rgb(251 151 0)
+    }
+    100% {
+        color: rgb(255 255 255)
+    }
+}
+
+.headerarea a {
+    display: block;
+    font-size: 1.7rem;
+    color: rgb(43 73 135);
+    font-weight: bolder
+}
+
+.headerarea a small {
+    display: block;
+    color: #878787;
+    font-size: 1.5rem
+}
+
+.banner,
+.bannerimg {
+    height: 800px;
+    overflow: hidden
+}
+
+.bannerimg img {
+    height: 100%;
+    width: 100%
+}
+
+.newsevents {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1
+}
+
+.banner .carousel-indicators {
+    cursor: pointer
+}
+
+.eventbg {
+    padding: 19px 0;
+    background: #821aaf;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    height: auto
+}
+
+.eventbg h3 {
+    padding: 0 13px;
+    text-align: center;
+    font-size: 1.2rem
+}
+
+.newsdate {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    vertical-align: middle;
+    border-right: 1px solid #ccc
+}
+
+.newsdate p {
+    padding: 21px 0 11px 10px
+}
+
+.newslist {
+    list-style: none;
+    padding: 21px 0 11px 10px;
+    font-size: 1.1em;
+    color: #888
+}
+
+.banner .carousel-indicators li {
+    width: 11px;
+    height: 11px
+}
+
+.toplower {
+    background-color: rgb(43 73 135);
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    top: 86px
+}
+
+.toplower .nav-link {
+    color: rgb(255 255 255)
+}
+
+.toplower .navbar-expand-lg .navbar-nav .nav-link {
+    padding: .33rem 1rem
+}
+
+.toplower .nav-link.active {
+    color: #ccc;
+    background-color: #007bff;
+    background-color: rgba(255, 255, 255, .03)
+}
+
+.mobileapp {
+    font-size: .9rem;
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid #2b4987;
+    color: #2b4987;
+    border-radius: 0
+}
+
+.mobileapp:hover {
+    background-color: #2b4987;
+    color: #fff
+}
+
+.introduction {
+    background: #f4f6f5
+}
+
+.introductioncontent {
+    background-image: url(../images/introductionbg.png);
+    padding: 96px 0 96px 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.hdStyle3 {
+    color: #2b4987;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 67px
+}
+
+.hdStyle3:after {
+    position: absolute;
+    bottom: -6px;
+    left: 35%;
+    height: 4px;
+    width: 83px;
+    content: '';
+    background: #2b4987
+}
+
+.btnsrtyle3 {
+    border: 1px solid rgb(130 26 175);
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 31px;
+    margin-top: 33px;
+    padding: 10px 37px;
+    color: rgb(130 26 175) !important;
+    transition: .2s
+}
+
+.btnsrtyle3:hover {
+    background-color: #821aaf;
+    color: #fff !important
+}
+
+.governersexcell {
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 96px 0
+}
+
+.governersexcell:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46%;
+    height: 100%;
+    background: rgb(43 73 135);
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-43deg);
+    transform-origin: bottom
+}
+
+.title:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #821aaf;
+    transform-origin: top right;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-43deg, 0deg)
+}
+
+.governorname h3 {
+    color: #2b4987
+}
+
+.governarimg img {
+    height: 529px;
+    z-index: -
+}
+
+.subheading {
+    font-weight: 500;
+    color: rgb(67 113 209);
+    margin-bottom: 37px
+}
+
+.title {
+    padding: 21px 22px 18px 16px;
+    font-size: 20px;
+    width: 265px !important;
+    margin-left: 162px !important;
+    position: relative;
+    color: #fff;
+    margin-left: 164px;
+    margin-top: -28px;
+    left: 0;
+    background: #821aaf
+}
+
+.title:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgb(130 26 175);
+    transform-origin: top right;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-43deg, 0deg)
+}
+
+.title:after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    transform: rotate(-69deg);
+    bottom: 61px !important;
+    z-index: 0;
+    right: 5px;
+    height: 15px;
+    border-bottom: 40px solid #821aaf;
+    border-left: 40px solid transparent
+}
+
+.title h3,
+.title small {
+    z-index: 3;
+    position: relative;
+    line-height: 36%;
+    font-size: 16px !important
+}
+
+.governarimg {
+    position: relative;
+    z-index: 1;
+    left: 190px
+}
+
+.hdStyle4 {
+    color: rgb(43 73 135);
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    font-size: 1.9rem
+}
+
+.hdStyle4:after {
+    position: absolute;
+    bottom: -6px;
+    left: 46%;
+    height: 4px;
+    width: 83px;
+    content: '';
+    background: #2b4987
+}
+
+.gallery .introductioncontent {
+    background-image: url(../images/introductionbg.png);
+    padding: 56px 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.gallerybutn {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    vertical-align: middle
+}
+
+.btnStyle4 {
+    border: 1px solid rgb(130 26 175);
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 31px;
+    margin: 10px 0;
+    padding: 10px 37px;
+    color: rgb(130 26 175) !important;
+    transition: .2s
+}
+
+.gallery .text {
+    height: 52px
+}
+
+.btnStyle4:hover {
+    background-color: #821aaf;
+    color: #fff !important
+}
+
+.galleryimg .carousel-indicators {
+    bottom: -49px
+}
+
+.galleryimg .carousel-indicators li:after {
+    background-color: #9e9e9e;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1px;
+    left: 4px;
+    display: inline-block;
+    height: 10px;
+    content: "";
+    width: 9px
+}
+
+.galleryimg .carousel-indicators li:before {
+    border: 2px solid #9e9e9e;
+    border-radius: 50%;
+    height: 18px;
+    width: 17px
+}
+
+.galleryimg .carousel-indicators li.active:after {
+    background-color: #821aaf;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1px;
+    left: 4px;
+    display: inline-block;
+    height: 10px;
+    content: "";
+    width: 9px
+}
+
+.galleryimg .carousel-indicators li.active:before {
+    border: 2px solid #821aaf;
+    border-radius: 50%;
+    height: 18px;
+    width: 17px
+}
+
+.galleryimg .spotlight {
+    margin: .5rem;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    display: block;
+    height: 330px;
+    overflow: hidden
+}
+
+.galleryimg .carousel-indicators .active {
+    background-color: transparent
+}
+
+.galleryimg .carousel-indicators li {
+    background-color: transparent;
+    cursor: pointer
+}
+
+.socialwall {
+    background-image: url(../images/socialpattern.png);
+    padding: 56px 0;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.socialwall img {
+    width: 100%
+}
+
+.socialwall-bg {
+    background-color: #fff;
+    border-top: 4px solid #227dd6;
+    margin-top: 32px
+}
+
+.socialwall-bg h6 {
+    padding: 13px 10px;
+    color: #082643;
+    font-weight: 600;
+    font-size: 1.1rem;
+    float: left
+}
+
+.socialwall-bg h6 small {
+    font-size: 79%;
+    font-weight: inherit;
+    color: #4784a7
+}
+
+.socialwall-bg i {
+    float: right;
+    padding: 13px 10px;
+    font-size: 1.6rem;
+    color: #27a6d1
+}
+
+.socialwall-bg hr {
+    border-bottom: 1px solid #fff;
+    margin-top: 46px
+}
+
+.contactus {
+    background-color: #f4f6f5;
+    padding: 96px 0
+}
+
+.contactustext {
+    line-height: 238%
+}
+
+.hdStyle1 {
+    color: rgb(43 73 135);
+    font-weight: 800;
+    position: relative;
+    font-size: 1.9rem;
+    margin-bottom: 30px
+}
+
+.hdStyle1:after {
+    position: absolute;
+    bottom: -6px;
+    left: 1px;
+    height: 4px;
+    width: 83px;
+    content: '';
+    background: #2b4987
+}
+
+.hdStyle1:before {
+    content: "";
+    position: absolute;
+    background: url(../images/footerpattern.png) no-repeat;
+    background-size: 100%;
+    width: 123px;
+    height: 193px;
+    z-index: 1;
+    left: -104px;
+    top: -26px
+}
+
+.contactus .hdStyle2 {
+    color: rgb(43 73 135);
+    font-size: 1.9rem;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 67px
+}
+
+.contactus .hdStyle2:after {
+    position: absolute;
+    bottom: -6px;
+    left: 1px;
+    height: 4px;
+    width: 83px;
+    content: '';
+    background: #2b4987
+}
+
+.contactustext strong {
+    color: rgb(79 81 80);
+    font-size: 1.3rem
+}
+
+.contactustext p {
+    color: rgb(93 95 94);
+    margin-bottom: 0
+}
+
+.contacticon {
+    list-style: none
+}
+
+.contacticon li i {
+    margin-right: 12px;
+    color: rgb(43 73 135)
+}
+
+.contacticon li i.icon-Group-10,
+.contacticon li i.icon-Phone {
+    font-size: 1.4em
+}
+
+.contacticon li a span {
+    color: #a4a6a5;
+    padding: 0 12px
+}
+
+.contacticon li a {
+    color: #5d5f5e
+}
+
+.puricontact {
+    list-style: none;
+    margin-top: 0
+}
+
+.puricontact li {
+    display: inline-block;
+    margin-right: 9px
+}
+
+.puricontact li a {
+    height: 38px;
+    width: 38px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff
+}
+
+.puricontact li .facebook {
+    background: rgb(60 90 154);
+    color: rgb(255 255 255)
+}
+
+.puricontact li .instagram {
+    background: #6d26b2;
+    color: #fff
+}
+
+.puricontact li .twitter {
+    background: #27a6d1;
+    color: #fff
+}
+
+.puricontact li .googleplus {
+    background: #d74837;
+    color: #fff
+}
+
+.puricontact li .linkedin {
+    background: #005e8e;
+    color: #fff
+}
+
+.puricontact li:hover {
+    opacity: .9;
+    position: relative;
+    top: -3px;
+    transition: .2s
+}
+
+.feedback form label {
+    position: absolute;
+    left: 36px;
+    background: #f4f6f5;
+    top: -11px;
+    color: #898989;
+    padding: 0 10px
+}
+
+.feedback form .form-group {
+    position: relative
+}
+
+.feedback form .form-group .form-control {
+    background-color: rgb(244 246 245);
+    border-radius: 0;
+    padding: .7rem .75rem;
+    margin: 37px 0
+}
+
+.btnsrtyle2 {
+    background: #821aaf;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 31px;
+    padding: 10px 37px;
+    color: #fff !important;
+    transition: .2s
+}
+
+footer {
+    background-color: rgb(43 73 135);
+    padding: 28px 0;
+    color: rgb(255 255 255);
+    position: relative
+}
+
+footer:before {
+    content: "";
+    position: absolute;
+    background: url(../images/dot-pattern.png) no-repeat;
+    background-size: 100%;
+    width: 123px;
+    height: 242px;
+    z-index: 1;
+    bottom: 0;
+    left: 0
+}
+
+footer:after {
+    content: "";
+    position: absolute;
+    background: url(../images/dot-pattern.png) no-repeat;
+    background-size: 100%;
+    width: 123px;
+    height: 242px;
+    z-index: 1;
+    right: 0;
+    top: -26px
+}
+
+footer .footerlink {
+    position: relative;
+    font-size: .9rem;
+    line-height: 221%
+}
+
+footer .footerlink li {
+    list-style: none;
+    margin-left: 6px
+}
+
+footer .footerlink li a {
+    color: #fff
+}
+
+footer .footerlink li a:hover {
+    color: #ffc107
+}
+
+footer .footerlink:before {
+    position: absolute;
+    left: 0;
+    width: 1px;
+    top: 10px;
+    height: 226px;
+    content: ''
+}
+
+.socialcontact {
+    list-style: none
+}
+
+.socialcontact {
+    list-style: none;
+    margin-bottom: 57px
+}
+
+.socialcontact li {
+    display: inline-block;
+    margin-right: 9px
+}
+
+.socialcontact li a {
+    height: 38px;
+    width: 38px;
+    display: block;
+    text-align: center;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 100px;
+    transition: .2s
+}
+
+.socialcontact li a i {
+    font-size: 1em;
+    line-height: 206%
+}
+
+.btnsrtyle1 {
+    background: #fff;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 6px;
+    padding: 17px 25px;
+    color: #2b4987 !important;
+    transition: .2s
+}
+
+.copy_right {
+    padding: 10px 0
+}
+
+.socialcontact li .facebook:hover {
+    background: #3c5a9a;
+    color: #fff
+}
+
+.socialcontact li .instagram:hover {
+    background: #6d26b2;
+    color: #fff
+}
+
+.socialcontact li .twitter:hover {
+    background: #27a6d1;
+    color: #fff
+}
+
+.socialcontact li .googleplus:hover {
+    background: #d74837;
+    color: #fff
+}
+
+.socialcontact li .linkedin:hover {
+    background: #005e8e;
+    color: #fff
+}
+
+.contactus .feedback .form label {
+    background: #f4f6f5
+}
+
+.content-inner .feedback form .form-group .form-control {
+    background-color: #fff
+}
+
+.content-inner .feedback form label {
+    background: #fff
+}
+
+.content-inner .contacticon li:after {
+    display: none
+}
+
+.content-inner .contacticon li {
+    padding: .5em 0 0 0
+}
+
+.content-inner .puricontact li:after {
+    display: none
+}
+
+.content-inner .puricontact a {
+    line-height: 2.4em
+}
+
+.content-inner .puricontact li {
+    margin-right: 18px;
+    padding: .5em 0 0 0
+}
+
+.content-inner .contacticon {
+    margin-bottom: 0
+}
+
+.content-inner .puricontact {
+    margin-bottom: 0
+}
+
+.contact-list .card {
+    min-height: 322px
+}
+
+.contact-list .card .card-header {
+    padding: .75rem .4rem
+}
+
+.content-inner .contact-list h5 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1rem;
+    color: #2b4987;
+    margin-left: 11px
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.footer-list li {
+    float: left;
+    margin-right: 10px
+}
+
+.footer-list li {
+    display: inline-block
+}
+
+.footer-list ul li a {
+    padding: 10px 7px
+}
+
+.footer-list ul li:after {
+    position: absolute;
+    top: 5px;
+    height: 15px;
+    width: 1px;
+    background: #b7b8ba;
+    content: ''
+}
+
+.footer-list ul li:last-child:after {
+    display: none
+}
+
+.content-inner .form-control {
+    border: 1px solid #ced4da !important
+}
+
+.card.servicecard {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    border: none;
+    text-align: center
+}
+
+.card.servicecard a {
+    background-color: #821aaf;
+    color: #fff;
+    border: none;
+    width: 44%;
+    border-radius: 30px
+}
+
+.card.servicecard a:hover {
+    color: #fff
+}
+
+.card.servicecard .card-body .card-title {
+    font-size: 1.2em;
+    margin-top: -28px
+}
+
+.card.servicecard .card-body .card-text {
+    height: 87px
+}
+
+.card.servicecard .card-body .card-text.cardtext1 {
+    min-height: 109px
+}
+
+.card.servicecard .card-img-top {
+    padding: 10px
+}
+
+.content-sec .service-content {
+    background-image: none !important
+}
+
+.card-parent.card {
+    height: 400px;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    border: none
+}
+
+.card-parent.card .card-body {
+    padding: 10px
+}
+
+.card-parent.card-body {
+    border: 1px solid #2b498773;
+    webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 4px 10px 6px -6px #7777777d
+}
+
+.header-section1 {
+    height: 150px
+}
+
+.content-section1 {
+    height: 206px;
+    background-color: #fff
+}
+
+.content-inner .content-section1 h5 {
+    text-align: center;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: .99em
+}
+
+.content-inner .content-section2 h5 {
+    text-align: center;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: .99em
+}
+
+.content-inner .content-section3 h5 {
+    text-align: center;
+    color: #000;
+    margin-top: .99em;
+    font-size: 1.2rem;
+    font-weight: 400
+}
+
+.header-section2 {
+    height: 150px
+}
+
+.content-section2 {
+    height: 206px;
+    background-color: #fff
+}
+
+.header-section3 {
+    height: 150px
+}
+
+.content-section3 {
+    height: 206px;
+    background-color: #fff
+}
+
+.content-section1 a,
+.content-section2 a,
+.content-section3 a {
+    margin: 4rem 0 0 6rem;
+    color: #fff !important;
+    background: #821aaf;
+    border: 1px solid #ccc;
+    border-radius: 18px
+}
+
+@media(max-width:1680px) {
+    .governersexcell:before {
+        right: -19px
+    }
+    .title:after {
+        transform: rotate(0);
+        bottom: 47px;
+        right: 5px
+    }
+    .title {
+        width: 378px;
+        margin-left: 44px
+    }
+}
+
+@media(max-width:1600px) {
+    .governarimg {
+        bottom: 15px;
+        right: 20px
+    }
+    .title {
+        width: 372px;
+        margin-left: 21px;
+        margin-top: -45px
+    }
+    .governarimg img {
+        height: 517px
+    }
+    .governersexcell:before {
+        right: 0
+    }
+}
+
+@media(max-width:1440px) {
+    .title {
+        width: 313px;
+        margin-left: 15px;
+        margin-top: -45px;
+        padding: 21px 11px 18px 0
+    }
+    .governarimg img {
+        height: 442px
+    }
+    .governersexcell:before {
+        transform: skewX(-43deg)
+    }
+    .governarimg {
+        bottom: 23px
+    }
+    .banner,
+    .bannerimg {
+        height: 660px;
+        padding-top: 1.3rem
+    }
+    .carousel-indicators {
+        bottom: 36px
+    }
+    .governersexcell {
+        padding: 38px 0
+    }
+    .bannerimg img {
+        width: 120%
+    }
+}
+
+@media(max-width:1366px) {
+    .governarimg {
+        bottom: 37px;
+        left: 127px
+    }
+    .title:before {
+        transform: skew(-47deg, 0deg)
+    }
+    .title {
+        margin-left: 164px;
+        margin-top: -47px;
+        width: 284px
+    }
+    .governersexcell:before {
+        transform: skewX(-47deg)
+    }
+    .socialwall img {
+        height: 499px
+    }
+    .governarimg img {
+        height: 395px
+    }
+    .title h3,
+    .title small {
+        font-size: 17px
+    }
+    .title:after {
+        transform: rotate(56deg);
+        bottom: 64px;
+        right: 7px
+    }
+}
+
+@media(max-width:1200px) {
+    .governarimg {
+        bottom: 35px;
+        left: 112px
+    }
+    .title {
+        margin-left: -81px;
+        margin-top: -47px;
+        width: 328px
+    }
+    .title:after {
+        transform: rotate(57deg);
+        bottom: 68px;
+        right: 8px
+    }
+}
+
+@media(max-width:1280px) {
+    .bannerimg img {
+        width: 150%
+    }
+}
+
+@media(max-width:1152px) {
+    .toplower .navbar-expand-lg .navbar-nav .nav-link {
+        margin-right: 0
+    }
+    .toplower .navbar {
+        font-size: .9rem
+    }
+    .topbar .utilArea ul.shortcot li {
+        margin-right: 0
+    }
+    .topbar .utilArea ul li a {
+        padding: 0 1px
+    }
+    .newsdate {
+        font-size: 1em
+    }
+    .eventbg h3 {
+        font-size: 1em
+    }
+    .eventbg h3 {
+        padding: 0 34px
+    }
+    .governersexcell:before {
+        transform: skewX(-35deg)
+    }
+    .governarimg {
+        right: 49px;
+        bottom: 41px
+    }
+    .governarimg img {
+        height: 454px
+    }
+    .title {
+        margin-top: -56px;
+        width: 317px;
+        margin-left: -9px;
+        padding: 21px 22px 18px 0
+    }
+    .title h3,
+    .title small {
+        font-size: 1rem;
+        line-height: 32%
+    }
+    .title:before {
+        transform: skew(-35deg, 0deg)
+    }
+    .title:after {
+        bottom: 33px
+    }
+    .title small {
+        font-size: .8rem;
+        line-height: 32%
+    }
+    .content-section1 a,
+    .content-section2 a,
+    .content-section3 a {
+        margin: 4rem 0 0 4rem
+    }
+}
+
+@media(max-width:1024px) {
+    .governersexcell:before {
+        transform: skewX(-26deg)
+    }
+    .title {
+        margin-left: 344px;
+        width: 303px;
+        padding: 21px 22px 18px 49px
+    }
+    .title:before {
+        transform: skew(-26deg, 0deg)
+    }
+    .governarimg {
+        left: 492px
+    }
+    .banner,
+    .bannerimg {
+        height: 600px;
+        padding-top: 2rem
+    }
+    .carousel-indicators {
+        bottom: 44px
+    }
+    .title:after {
+        bottom: 61px
+    }
+}
+
+@media(max-width:800px) {
+    .headercontainer {
+        white-space: nowrap
+    }
+    .socialcontact1 {
+        margin-bottom: 40px
+    }
+    .governersexcell:before {
+        background: 0 0
+    }
+    .title:before {
+        transform: skew(0deg, 0deg)
+    }
+    .topbar .utilArea .shortcot {
+        display: none
+    }
+    .title {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+        margin-top: -74px;
+        left: 123px
+    }
+    .governersexcell.governer {
+        padding: 38px 0 0 0
+    }
+    .bannerimg img {
+        width: 150%
+    }
+    .banner,
+    .bannerimg {
+        height: 550px;
+        padding-top: 2.5rem
+    }
+    .collapse.show {
+        border: 1px solid #fff
+    }
+    .btnsrtyle3 {
+        margin-top: 0;
+        float: right
+    }
+    .govsec {
+        margin: 15px 0
+    }
+    .contactustext {
+        margin-bottom: 1.5rem
+    }
+    .socialwall img {
+        height: auto
+    }
+    .carousel-indicators {
+        bottom: 60px
+    }
+    .content-section1 a,
+    .content-section2 a,
+    .content-section3 a {
+        margin: 4rem 0 0 16rem
+    }
+    .governarimg {
+        bottom: 0;
+        left: 122px;
+        background: #2b4987;
+        width: 445px;
+        height: 517px
+    }
+    .governer {
+        margin: 0 auto
+    }
+}
+
+@media(max-width:640px) {
+    .governarimg {
+        bottom: 0;
+        left: -20px;
+        height: 455px
+    }
+    .title {
+        margin-top: -1px;
+        left: -18px;
+        width: 100%;
+        padding: 14px 47px 10px 0
+    }
+    .governer {
+        margin: 0 auto
+    }
+    .banner,
+    .bannerimg {
+        height: 457px;
+        padding-top: 3rem
+    }
+    .btnStyle4 {
+        padding: 7px 7px
+    }
+    .title h3,
+    .title small {
+        padding-left: 0
+    }
+    .topbar .utilArea ul.shortcot li {
+        display: none
+    }
+    .socialwall {
+        padding: 20px 0
+    }
+    .gallery .introductioncontent {
+        padding: 20px 0
+    }
+    .content-section1 a,
+    .content-section2 a,
+    .content-section3 a {
+        margin: 4rem 0 0 10rem
+    }
+    .btn.btn-info.login {
+        position: relative;
+        top: 74px;
+        color: #fff;
+        border: 1px solid #fff
+    }
+    .mobileapp {
+        position: relative;
+        top: 74px;
+        color: #fff;
+        border: 1px solid #fff
+    }
+}
+
+@media(max-width:480px) {
+    .banner,
+    .bannerimg {
+        height: 370px;
+        padding-top: 3rem
+    }
+    .governarimg img {
+        height: 466px
+    }
+    .bannerimg img {
+        width: 160%
+    }
+    .socialwall img {
+        height: auto
+    }
+    .btnStyle4 {
+        padding: 7px 8px
+    }
+    .hdStyle4:after {
+        left: 38%;
+        width: 118px
+    }
+    .hdStyle4 {
+        font-size: 30px;
+        margin-bottom: 1rem
+    }
+    .content-section1 a,
+    .content-section2 a,
+    .content-section3 a {
+        margin: 4rem 0 0 8rem
+    }
+    .toggleicon {
+        margin-top: 2.5rem !important
+    }
+    .btn.btn-info.login {
+        top: 49px
+    }
+    .mobileapp {
+        top: 49px
+    }
+}
+
+@media(max-width:425px) {
+    .logotext strong {
+        font-size: 1.2rem !important
+    }
+    .topbar {
+        height: 88px
+    }
+    .governersexcell h1,
+    h3 {
+        font-size: 1.3rem
+    }
+    .content-section1 a,
+    .content-section2 a,
+    .content-section3 a {
+        margin: 4rem 0 0 6.5rem
+    }
+    .dropdown-submenu>.dropdown-menu.menumanag {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 200px
+    }
+    .governersexcell:before {
+        background-color: transparent
+    }
+    .governarimg {
+        right: 0;
+        bottom: -13px;
+        left: -14px
+    }
+    .title {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        left: 0
+    }
+    .title:before {
+        transform: none
+    }
+    .title:after {
+        bottom: 0;
+        transform: none
+    }
+    .btnsrtyle3 {
+        font-size: .8rem;
+        padding: 8px 9px
+    }
+    .btnStyle4 {
+        padding: 8px 9px;
+        font-size: .8rem
+    }
+    .govsec {
+        background: #f1f1f1;
+        padding: 16px 0;
+        margin: 0 0;
+        width: 100%
+    }
+    .hdStyle4:after {
+        left: 35%;
+        width: 118px
+    }
+    .toplower .navbar {
+        padding: 0
+    }
+    .toggleicon {
+        margin-top: 1.3rem !important
+    }
+    .btn.btn-info.login {
+        top: 26px
+    }
+    .mobileapp {
+        top: 26px
+    }
+}
+
+@media(max-width:380px) {
+    .logotext strong {
+        font-size: .9rem !important
+    }
+    .topbar {
+        height: 92px
+    }
+    .governarimg {
+        margin-top: 0;
+        left: -14px;
+        width: 445px;
+        height: 376px
+    }
+    .governarimg img {
+        height: 324px;
+        margin-left: 2rem
+    }
+    .content-section1 a,
+    .content-section2 a,
+    .content-section3 a {
+        margin: 4rem 0 0 5rem
+    }
+    .title {
+        margin: 0 auto;
+        width: 370px;
+        text-align: center;
+        left: -11px;
+        bottom: 47px
+    }
+    .btn.btn-info.login {
+        font-size: .7rem
+    }
+    .mobileapp {
+        font-size: .7rem;
+        top: 24px
+    }
+    .toplower .navbar .navbar-toggler {
+        padding: 0
+    }
+    .btn.btn-info.login {
+        top: 24px
+    }
+}
+
+@media(max-width:320px) {
+    .login {
+        margin-top: 56px
+    }
+    .content-section1 a,
+    .content-section2 a,
+    .content-section3 a {
+        margin: 4rem 0 0 3rem
+    }
+    .btn.btn-info.login {
+        top: -29px;
+        padding: 2px
+    }
+    .mobileapp {
+        top: -1px;
+        padding: 2px
+    }
+}

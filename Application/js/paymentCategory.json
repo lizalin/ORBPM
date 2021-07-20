@@ -1,0 +1,24 @@
+{
+    "paymentCategory":[
+        {
+            "type"  :   "For development / sub-division of land",
+            "value" :   "1"
+        },
+        {
+            "type"  :   "For building operation",
+            "value" :   "2"
+        },
+        {
+            "type"  :   "For Change of Existing Building Use",
+            "value" :   "3"
+        },
+        {
+            "type"  :   "For change of Land Use from the original use",
+            "value" :   "4"
+        },
+        {
+            "type"  :   "Development Plan to other Land Use",
+            "value" :   "5"
+        }
+    ]
+}

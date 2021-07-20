@@ -1,0 +1,21 @@
+{
+   "useType":[
+       {
+           "type"   :   "Residential Use",
+           "value"  :   "1"
+       },
+       {
+           "type"   :   "Commercial Use",   
+           "value"  :   "2"
+       },
+       {
+           "type"   :   "Public and Semi-Public Use",
+           "value"  :   "3"
+       },
+       {
+           "type"   :   "Industrial Use",
+           "value"  :   "4"
+       }
+       
+   ]
+}
